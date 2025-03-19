@@ -1,4 +1,5 @@
-/* General Styles */
+/* styles.css */
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -64,7 +65,7 @@ header nav ul li a {
 .content {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin: 20px 0;
     padding: 20px;
     animation: fadeIn 1.5s;
@@ -77,65 +78,6 @@ header nav ul li a {
     font-size: 1.5rem;
 }
 
-/* Flash Cards Section */
-#experience .scrolling-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-#experience .card {
-    flex: 0 0 auto;
-    width: 600px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    animation: fadeIn 1.5s;
-}
-
-#experience .card h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-    color: #007bff;
-}
-
-#experience .card p {
-    font-size: 1rem;
-    color: #333;
-}
-
-#experience .card-content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-#experience .card-content > div {
-    width: 48%;
-}
-
-#experience .responsibilities h4,
-#experience .technologies h4 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-#experience .responsibilities ul,
-#experience .technologies ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#experience .responsibilities ul li,
-#experience .technologies ul li {
-    margin-bottom: 10px;
-}
-
-/* Projects Section */
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
@@ -143,77 +85,32 @@ header nav ul li a {
 }
 
 .project {
-    flex: 1 1 calc(25% - 20px);
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.project-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.project-image {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* Adjusted for a taller aspect ratio */
-    overflow: hidden;
     background: #f1f1f1;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.project-image:hover img {
-    transform: scale(1.1);
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33.333% - 20px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
     text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
-.project-overlay h3 {
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+.project p {
     margin: 0;
-    font-size: 1.5rem;
 }
 
-.project-overlay p {
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-.project-image:hover .project-overlay {
-    opacity: 1;
-}
-
-
-/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -236,4 +133,159 @@ footer {
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+.intro {
+    background: url('img_1.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0 100px 0;
+    margin-top: 60px;
+}
+
+    .intro h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        animation: fadeInDown 1.5s;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+        animation: fadeInUp 1.5s;
+    }
+
+.content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 20px;
+    animation: fadeIn 1.5s;
+}
+
+    .content h2 {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .project img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .project h3 {
+        margin: 10px 0;
+    }
+
+    .project p {
+        margin: 0;
+    }
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
