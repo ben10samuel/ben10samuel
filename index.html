@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ben George Samuel's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben George Samuel's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
     <header>
         <div class="container">
-
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -26,42 +27,96 @@
 
         </div>
     </header>
-
     <section id="home" class="intro" data-aos="fade-up">
         <div class="container">
+            <div class="intro-content">
+                <!-- Left Side: Your Image -->
+                <img src="profilepic.jpeg" alt="Ben George Samuel" class="intro-image">
 
-            <h1>Ben George Samuel</h1>
-            <p>Data Scientist and Database Administrator</p>
-            <p>Skilled in Python, D3.js, ML, NLP, and Deep Learning.</p>
+                <!-- Right Side: Your Text -->
+                <div class="intro-text">
+                    <h1>Ben George Samuel</h1>
+                    <p>Data Scientist | Data Analyst | Data Visualisation Engineer</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ben-george-samuel/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/ben10samuel" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:ben10samuel@gmail.com" target="_blank" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </div>
-
     </section>
 
     <section id="about" class="content" data-aos="fade-up">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I’m Ben George Samuel, an aspiring Data Scientist with a robust background in Database Administration. I am currently pursuing my Master's in Data Science at the University of Massachusetts Dartmouth, where I have developed a strong foundation in machine learning, data analysis, and big data technologies.</p>
+        <div class="about-container">
+            <!-- Left: Honeycomb Skills -->
+            <div class="honeycomb-wrapper">
+                <div class="honeycomb-row">
+                    <div class="hex" style="animation-delay: 0s;">Python</div>
+                    <div class="hex" style="animation-delay: 0.5s;">SQL</div>
+                    <div class="hex" style="animation-delay: 1s;">ML</div>
+                    <div class="hex" style="animation-delay: 1.5s;">Power BI</div>
+                </div>
+                <div class="honeycomb-row shifted">
+                    <div class="hex" style="animation-delay: 2s;">SQL Server</div>
+                    <div class="hex" style="animation-delay: 2.5s;">Neo4j</div>
+                    <div class="hex" style="animation-delay: 3s;">MongoDB</div>
+                </div>
+                <div class="honeycomb-row">
+                    <div class="hex" style="animation-delay: 3.5s;">Scikit-learn</div>
+                    <div class="hex" style="animation-delay: 4s;">TensorFlow</div>
+                    <div class="hex" style="animation-delay: 4.5s;">Keras</div>
+                    <div class="hex" style="animation-delay: 5s;">PyTorch</div>
+                </div>
+                <div class="honeycomb-row shifted">
+                    <div class="hex" style="animation-delay: 5.5s;">Hadoop</div>
+                    <div class="hex" style="animation-delay: 6s;">Apache Spark</div>
+                    <div class="hex" style="animation-delay: 6.5s;">Databricks</div>
+                </div>
+                <div class="honeycomb-row">
+                    <div class="hex" style="animation-delay: 7s;">Azure</div>
+                    <div class="hex" style="animation-delay: 7.5s;">SSIS</div>
+                    <div class="hex" style="animation-delay: 8s;">SSRS</div>
+                    <div class="hex" style="animation-delay: 8.5s;">AWS</div>
+                </div>
+            </div>
 
-            <p>Throughout my career, I have honed my skills in Python, R, SQL, and various data visualization tools such as Power BI and Tableau. My passion for data science drives me to continually learn and apply the latest techniques in predictive modeling, natural language processing, and deep learning to solve real-world problems.</p>
-
-            <p>Some highlights of my expertise include:</p>
-            <ul>
-                <li>Proficient in programming languages including Python, R, and T-SQL.</li>
-                <li>Experience with machine learning libraries such as scikit-learn, TensorFlow, Keras, and PyTorch.</li>
-                <li>Strong capabilities in data visualization with tools like Matplotlib, Seaborn, D3.js, and Plotly.</li>
-                <li>Skilled in big data technologies like Apache Spark, Hadoop, and Kafka.</li>
-            </ul>
-            <p>My professional journey includes working as a Database Administrator and Power BI Analyst at Qatar Leadership Centre, where I enhanced decision-making processes through advanced analytics and reporting. Additionally, I have substantial experience in managing SQL Server databases and implementing high-availability solutions to ensure system reliability.</p>
-            <p>Apart from my technical skills, I am a strong advocate for data-driven decision-making and enjoy communicating complex data insights in an understandable and actionable manner. My goal is to leverage my skills and experiences to drive innovation and create impactful solutions in the field of data science.</p>
+            <!-- Right: About Me Text -->
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    🙋‍♂️ Hi,I’m <strong>Ben George Samuel</strong>, a Data Scientist with 11+ years of experience in database systems and a recent Master’s graduate in Data Science from the University of Massachusetts Dartmouth.
+                </p>
+                <p>
+                    With a unique blend of <strong>enterprise-grade database engineering</strong> and modern <strong>AI & ML expertise</strong>, I specialize in transforming raw data into powerful, actionable insights.
+                </p>
+                <p>
+                    From building high-availability SQL environments to developing predictive models and interactive dashboards, I thrive at the intersection of <strong>data architecture</strong> and <strong>storytelling</strong>.
+                </p>
+                <p>
+                    I’ve led analytics initiatives at Qatar Leadership Centre and architected solutions that helped drive strategic decisions at scale. My approach is simple: <strong>solve hard problems with clean code, compelling visuals, and human-first storytelling</strong>.
+                </p>
+                <p>
+                    Let’s connect if you're looking for someone who can bridge business goals with technical excellence—while making data look beautiful.
+                </p>
+            </div>
         </div>
     </section>
+
 
     <section id="projects" class="content" data-aos="fade-up">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project">
-                    <img src="img_2.png" alt="Fraud Detection Project">
+                    <img src="creditcard.jpg" alt="Fraud Detection Project">
                     <h3><a href="https://github.com/ben10samuel/fraud-detection">Fraud Detection with Explainable AI</a></h3>
                     <p>Developed an Explainable AI model for fraud detection in the banking sector...</p>
                 </div>
@@ -71,18 +126,76 @@
                     <p>Developed a CNN-based model for accurate face mask detection in public spaces...</p>
                 </div>
                 <div class="project">
-                    <img src="img_4.png" alt="Property Value Prediction Project">
+                    <img src="Digi-House.png" alt="Property Value Prediction Project">
                     <h3><a href="https://github.com/ben10samuel/property-value-prediction">Predictive Modeling for Boston Area Property Asset Values</a></h3>
                     <p>Spearheaded a project to predict property asset values in the Boston area...</p>
                 </div>
                 <div class="project">
                     <img src="img_5.png" alt="School Shootings Analysis Project">
                     <h3><a href="https://github.com/ben10samuel/school-shootings-analysis">Insights into K-12 School Shootings: A Visual Analysis</a></h3>
-                    <p>Led a team project to explore factors influencing gun violence in schools...</p>
+                    
+                </div>
+                <div class="project">
+                    <img src="Education Dashboard.jpg" alt="Higher Education Dashboard">
+                    <h3><a href="https://app.powerbi.com/view?r=eyJrIjoiZTRmNGEwYTgtZjdiZi00YmRlLTljYmQtMzhmYzFlZTU1ZWU4IiwidCI6IjYxNjQ0MmIyLTM4NjYtNDFlZi1hNWEyLWQwYWEzM2Y1ZTQ0MSJ9&pageName=80ef99f88d06b349eadc">Higher Education Analysis Dashboard in Power BI</a></h3>
+                   
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="timeline" class="content" data-aos="fade-up">
+        <div class="timeline-container">
+            <h2>Career Timeline</h2>
+            <div class="timeline-line"></div>
+            <!-- Education - Right Side -->
+            <div class="timeline-item right education">
+                <div class="content">
+                    <h3>Bachelor’s in IT – University</h3>
+                    <span>2006 – 2010</span>
+                    <p>Studied core computing, programming, and information systems foundations.</p>
+                </div>
+            </div>
+
+            <!-- Work Experience - Left Side -->
+            <div class="timeline-item left work">
+                <div class="content">
+                    <h3>SQL Server DBA – CGI</h3>
+                    <span>2011 – 2015</span>
+                    <p>Managed SQL Server production environments, backups, and performance tuning.</p>
+                </div>
+            </div>
+
+            <!-- Education - Right Side -->
+            <div class="timeline-item right education">
+                <div class="content">
+                    <h3>Post Graduate Diploma in Data Science</h3>
+                    <span>2019 - 2020</span>
+                    <p>Specialized in Advanced Statistics ,Linear Algebra, Calculus, Machine Learning, .</p>
+                </div>
+            </div>
+
+            <!-- Work Experience - Left Side -->
+            <div class="timeline-item left work">
+                <div class="content">
+                    <h3>Power BI Analyst – Qatar Leadership Centre</h3>
+                    <span>2015 – 2023</span>
+                    <p>Built dashboards, optimized SQL performance, and led analytics projects.</p>
+                </div>
+            </div>
+
+            <!-- Education - Right Side -->
+            <div class="timeline-item right education">
+                <div class="content">
+                    <h3>Master’s in Data Science – UMass Dartmouth</h3>
+                    <span>2023 – 2024</span>
+                    <p>Specialized in machine learning, data analytics, and AI-based modeling.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
 
     <section id="contact" class="content" data-aos="fade-up">
@@ -99,10 +212,27 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ben George Samuel</p>
+            <p>&copy; 2025 Ben George Samuel</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const projects = document.querySelectorAll(".project");
+
+            function checkProjectsVisibility() {
+                const triggerPoint = window.innerHeight * 0.75;
+                projects.forEach(project => {
+                    const projectTop = project.getBoundingClientRect().top;
+                    if (projectTop < triggerPoint) {
+                        project.classList.add("show");
+                    }
+                });
+            }
+
+            checkProjectsVisibility(); // Initial check
+            window.addEventListener("scroll", checkProjectsVisibility);
+        });</script>
+
 </body>
 </html>
