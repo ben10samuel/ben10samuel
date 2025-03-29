@@ -496,7 +496,7 @@ footer {
     }
 
     .honeycomb-row {
-        justify-content: center;
+        justify-content: left;
         flex-wrap: nowrap;
         margin-bottom: -30px;
     }
@@ -506,9 +506,9 @@ footer {
         }
 
     .hex {
-        width: 70px;
-        height: 60px;
-        font-size: 9px;
+        width: 65px;
+        height: 55px;
+        font-size: 8px;
         margin-left: 20px;
         margin-right: 20px;
     }
