@@ -16,7 +16,8 @@
 <body>
     <header>
         <div class="container">
-            <nav>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -24,9 +25,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
+
     <section id="home" class="intro" data-aos="fade-up">
         <div class="container">
             <div class="intro-content">
@@ -133,12 +134,12 @@
                 <div class="project">
                     <img src="img_5.png" alt="School Shootings Analysis Project">
                     <h3><a href="https://github.com/ben10samuel/school-shootings-analysis">Insights into K-12 School Shootings: A Visual Analysis</a></h3>
-                    
+
                 </div>
                 <div class="project">
                     <img src="Education Dashboard.jpg" alt="Higher Education Dashboard">
                     <h3><a href="https://app.powerbi.com/view?r=eyJrIjoiZTRmNGEwYTgtZjdiZi00YmRlLTljYmQtMzhmYzFlZTU1ZWU4IiwidCI6IjYxNjQ0MmIyLTM4NjYtNDFlZi1hNWEyLWQwYWEzM2Y1ZTQ0MSJ9&pageName=80ef99f88d06b349eadc">Higher Education Analysis Dashboard in Power BI</a></h3>
-                   
+
                 </div>
             </div>
         </div>
@@ -233,6 +234,10 @@
             checkProjectsVisibility(); // Initial check
             window.addEventListener("scroll", checkProjectsVisibility);
         });</script>
+    <script>function toggleMenu() {
+            const nav = document.getElementById("main-nav");
+            nav.classList.toggle("show");
+        }</script>
 
 </body>
 </html>
