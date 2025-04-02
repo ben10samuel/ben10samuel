@@ -463,7 +463,7 @@ footer {
     padding: 1rem;
     font-weight: bold;
     cursor: pointer;
-    text-align: left;
+    text-align: right;
 }
 @media (max-width: 768px) {
     nav ul {
@@ -477,7 +477,7 @@ footer {
         nav ul li {
             display: block;
             margin: 10px 0;
-            text-align: left;
+            text-align: right;
         }
 
             nav ul li a {
