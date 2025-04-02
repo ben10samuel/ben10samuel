@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -465,7 +465,12 @@ footer {
     cursor: pointer;
     text-align: right;
 }
+/* mobile view styles*/
 @media (max-width: 768px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     nav ul {
         display: none;
         flex-direction: column;
@@ -497,7 +502,7 @@ footer {
     .intro {
         flex-direction: column;
         height: auto;
-        padding-top: 220px;
+        padding-top: 0px;
         text-align: center;
     }
 
@@ -565,9 +570,13 @@ footer {
 
     .about-text {
         width: 100%;
-        margin: 0;
+        max-width: 100%;
         padding: 0 15px;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
+
 
     header nav ul li {
         display: block;
